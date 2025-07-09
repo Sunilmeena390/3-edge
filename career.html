@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>career</title>
+  <link rel="stylesheet" href="3edge.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+  <style>
+    @media (max-width: 1024px) {
+
+      /* tablets */
+      .navbar,
+      .second-nav,
+      .main-section,
+      .three-box-1,
+      .form-section {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .menu a {
+        display: block;
+        margin: 10px 0;
+      }
+
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 768px) {
+
+      /* mobile */
+      .navbar {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .icon {
+        justify-content: center;
+        margin-top: 10px;
+      }
+
+      .three-box-1 {
+        flex-direction: column;
+      }
+
+      .box-1 {
+        width: 90%;
+        margin-bottom: 20px;
+      }
+
+      .form-background {
+        padding: 20px;
+      }
+
+      .form-detail,
+      .main-form {
+        width: 100%;
+      }
+
+      .menu {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .menu a {
+        margin: 8px 0;
+      }
+
+      .footer-one,
+      .footer-two,
+      .footer-three {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .quick-data,
+      .quick-data-1 {
+        width: 100%;
+        margin-bottom: 20px;
+      }
+
+      .img-box img {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    .navbar,
+    .second-nav,
+    .three-box-1 {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    .menu a {
+      padding: 10px;
+    }
+
+    .logo img {
+      width: 100%;
+      max-width: 150px;
+      height: auto;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    input,
+    button {
+      width: 100%;
+      max-width: 400px;
+      padding: 10px;
+      margin-bottom: 10px;
+      box-sizing: border-box;
+    }
+  </style>
+</head>
+
+<body style="background-color: #fdfdfd;">
+
+
+  <header>
+    <div class="navbar">
+      <div class="num">
+        <div class="phone-icon">
+          <span style="color: white;"><i class="fa-solid fa-phone"></i></span>
+          <span style="color: white;">+91-8426897254</span>
+        </div>
+        <div class="phone-icon">
+          <span style="color: white;"><i class="fa-solid fa-envelope"></i></span>
+          <span style="color: white;">sales@3edgetechnologies.com</span>
+        </div>
+      </div>
+      <div class="icon">
+        <span><i class="fa-brands fa-linkedin-in"></i></span>
+        <span><i class="fa-brands fa-facebook-f"></i></span>
+        <span><i class="fa-brands fa-instagram"></i></span>
+      </div>
+    </div>
+    <div class="second-nav">
+      <div class="logo"><img src="logo.png" alt="" style="height: 60px; margin-left: 25px;"></div>
+
+      <div class="menu">
+        <a style="color: white;" href="http://127.0.0.1:5500/index.html">home</a>
+        <a href="">service</a>
+        <a href="">industries</a>
+        <a href="">portfolio</a>
+        <a href="http://127.0.0.1:5500/career.html">career</a>
+        <a href="http://127.0.0.1:5500/about.html">about</a>
+        <a href="http://127.0.0.1:5500/blog.html">blog</a>
+        <a href="http://127.0.0.1:5500/contact.html">contact us</a>
+      </div>
+    </div>
+
+    <div class="para">
+      <p>welcome to 3 Edge Technologies, the leading provider of exceptional IT software services in Jaipur. With
+        a
+        strong focus on delivering high-quality work, we take pride in our extensive experience, ability to
+        maintain long-term client relationships, and our commitment to staying within budget. Our expertise and
+        intelligence span across various industries and domains, enabling us to transform our clients’ ideas
+        into successful and profitable projects.</p>
+    </div>
+
+    <span><a href=""> <button class="enquire-btn">apply now</button></a></span>
+
+    <div class="all-icon-section">
+      <div class="ui">
+        <div class="ui-icon-section">
+          <i class="fa-solid fa-computer"></i>
+          <h5>UI/UX Designer</h5>
+        </div>
+      </div>
+      <div class="ui">
+        <div class="ui-icon-section">
+          <i class="fa-solid fa-desktop"></i>
+          <h5>Web Developer</h5>
+        </div>
+      </div>
+      <div class="ui">
+        <div class="ui-icon-section">
+          <i class="fa-solid fa-mobile-screen-button"></i>
+          <h5>Mobile App Developer</h5>
+        </div>
+      </div>
+      <div class="ui">
+        <div class="ui-icon-section">
+          <i class="fa-solid fa-business-time"></i>
+          <h5>Business Analyst</h5>
+        </div>
+      </div>
+      <div class="ui">
+        <div class="ui-icon-section">
+          <i class="fa-regular fa-thumbs-up"></i>
+          <h5>Quality Analyst</h5>
+        </div>
+      </div>
+    </div>
+
+    <div class="main-section">
+      <section class="contact-section">
+        <div class="line-1">
+          <h1><span class="line"></span>Join <strong>Us Today</strong></h1>
+        </div>
+        <div class="contact-grid">
+          <div class="left-section">
+            <div class="contact-box">
+              <i class="fas fa-envelope icon"></i>
+              <div>
+                <p class="label">Share Your CV at</p>
+                <p class="email">hr@3edgetechnologies.com</p>
+              </div>
+            </div>
+            <div class="contact-box">
+              <i class="fas fa-phone icon"></i>
+              <div>
+                <p class="label">Call Us On</p>
+                <p class="phone">91-9116677781</p>
+              </div>
+            </div>
+          </div>
+          <div class="right-section">
+            <div class="social-box">
+              <i class="fab fa-facebook-f icon"></i>
+              <div>
+                <p class="label">Like Us On Facebook</p>
+                <p>3edgetechnologies</p>
+              </div>
+            </div>
+            <div class="social-box">
+              <i class="fab fa-instagram icon"></i>
+              <div>
+                <p class="label">Follow Us On Instagram</p>
+                <p>@3edgetechnologies</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="img-box">
+        <img src="smile.jpg" alt="">
+      </div>
+    </div>
+
+
+    <div class="three-box-1">
+      <div class="box-1" style="background-color: #fd6600;">
+        <img src="s1.png" alt="">
+        <h4>Expertise in Web Design</h4>
+        <p>We have years of experience in creating websites that are easy to use, look great, and work smoothly
+          on any device. We make sure your website meets your business needs and helps you grow online.</p>
+      </div>
+      <div class="box-1" style="background-color: #3B3465;">
+        <img src="s2.png" alt="">
+        <h4>Competitive Pricing</h4>
+        <p>We provide competitive pricing without compromising on the quality of our development services,
+          ensuring superior results every time.</p>
+      </div>
+      <div class="box-1" style="background-color: #fd6600;">
+        <img src="s3.png" alt="">
+        <h4>Proven Methodology</h4>
+        <p>We follow the AGILE methodology for development, ensuring our clients are updated at every stage,
+          giving us the right expertise and keeping the process transparent.</p>
+      </div>
+    </div>
+    <div class="three-box-1">
+      <div class="box-1" style="background-color:#3B3465;">
+        <img src="s4.png" alt="">
+        <h4>Proficient Developers</h4>
+        <p>Our team of developers stays updated with the latest web and app technologies, making sure our
+          projects are built with the best coding practices and are easy to maintain and test.</p>
+      </div>
+      <div class="box-1" style="background-color:#fd6600;">
+        <img src="s5.png" alt="">
+        <h4>24/7 Technical Support</h4>
+        <p>No matter where you are in the world, our support team is here 24/7 to guarantee that your business
+          runs smoothly at all times.</p>
+      </div>
+      <div class="box-1" style="background-color:#3B3465;">
+        <img src="s6.png" alt="">
+        <h4>Work Transparency</h4>
+        <p>Our clients receive constant updates through email, Skype, or calls to keep them informed at every
+          step. The code we develop is always your intellectual property and will never be used for other
+          purposes.</p>
+      </div>
+    </div>
+
+    <div class="form-section">
+      <div class="form-background">
+        <div class="form-detail">
+          <h3 style="font-size: x-large;">Can't wait to meet you</h3>
+          <p>BEGIN YOUR JOURNEY AT 3 EDGE TECHNOLOGIES</p>
+          <p style="margin-top: 20px;">MAKE A DIFFERENCE</p>
+        </div>
+        <div class="main-form">
+          <form>
+            <input type="email" id="email" name="name" placeholder="candidate name"><br>
+            <input type="email" id="email" name="email" placeholder="email address"><br>
+            <input type="email" id="email" name="email" placeholder="phone no."><br>
+            <input type="email" id="email" name="email" placeholder="experience (years,month)"><br>
+            <input type="email" id="email" name="email" placeholder="skype ID/whatsapp no."><br>
+            <input type="email" id="email" name="email" placeholder="profile"><br>
+            <input type="email" id="email" name="email" placeholder="message"><br>
+          </form>
+        </div>
+        <button>choose file</button>
+        <!-- <p>no file choosen</p> -->
+        <span><a href=""> <button class="apply">apply now</button></a></span>
+      </div>
+    </div>
+
+    <div class="logo-wrapper">
+      <img src="a1.png" class="zoom-logo" alt="AppFutura">
+      <img src="a2.png" class="zoom-logo" alt="Apdex">
+      <img style="height: 50px;" src="a3.png" class="zoom-logo" alt="Shopify">
+      <img src="a4.png" class="zoom-logo" alt="Business of Apps">
+    </div>
+
+  </header>
+
+  <footer style="margin-top: 50px;">
+    <div class="footer-one">
+      <div class="edge-img" style="display: flex; inline-size: fit-content;">
+        <div class="logo"><img src="logo.png" alt="" style="height: 60px; margin-left: 25px; margin-top: 45px;">
+        </div>
+        <img src="edge/mobile_files/edge.png" alt="" style="margin-top: 55px; margin-left: 50px;">
+      </div>
+      <div class="footer-icon" style="display: flex;">
+        <span style="color: white;"><i class="fa-solid fa-envelope"></i></span>
+        <span style="color: white; margin-top: 9px;">sales@3edgetechnologies.com</span>
+      </div>
+      <div class="footer-icon" style="display: flex;">
+        <span style="color: white;"><i class="fa-solid fa-phone"></i></span>
+        <span style="color: white; margin-top: 9px;">+91-8426897254</span>
+      </div>
+
+      <div class="icon-2">
+        <span><i class="fa-brands fa-linkedin-in"></i></span>
+        <span><i class="fa-brands fa-facebook-f"></i></span>
+        <span><i class="fa-brands fa-instagram"></i></span>
+      </div>
+
+      <div class="india-box">
+        <h3 style="margin-left: 12px; font-size: x-large; color:#FD6600 ;">india office</h3>
+        <div class="footer-icon-2" style="display: flex;">
+          <span style="color:#FD6600;"><i class="fa-solid fa-location-dot"></i></span>
+          <span style="color: black; margin-top: 9px;">505, JTM Model Town, Jagatpura, Jaipur, India</span>
+        </div>
+        <div class="footer-icon-2" style="display: flex;">
+          <span style="color:#FD6600;"><i class="fa-solid fa-envelope"></i></span>
+          <span style="color: black; margin-top: 9px;">sales@3edgetechnologies.com</span>
+        </div>
+      </div>
+      <div class="india-box">
+        <h3 style="margin-left: 12px; font-size: x-large; color:#FD6600 ;">germany office</h3>
+        <div class="footer-icon-2" style="display: flex;">
+          <span style="color:#FD6600;"><i class="fa-solid fa-location-dot"></i></span>
+          <span style="color: black; margin-top: 9px;">Siebstr.1 , 30171 Hannover, Germany</span>
+        </div>
+        <div class="footer-icon-2" style="display: flex;">
+          <span style="color:#FD6600;"><i class="fa-solid fa-envelope"></i></span>
+          <span style="color: black; margin-top: 9px;">sales@3edgetechnologies.com</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-two">
+      <div class="quick-data">
+        <h3>quick links</h3>
+        <ul>
+          <li> <a style="color: white;" href="http://127.0.0.1:5500/index.html">home</a></li>
+          <li> <a href="">portfolio</a></li>
+          <li> <a href="http://127.0.0.1:5500/career.html">career</a></li>
+          <li> <a href="http://127.0.0.1:5500/about.html">about</a></li>
+          <li> <a href="http://127.0.0.1:5500/blog.html">blog</a></li>
+          <li> <a href="http://127.0.0.1:5500/contact.html">contact us</a></li>
+        </ul>
+      </div>
+      <div class="quick-data">
+        <h3>service</h3>
+        <ul>
+          <li>web development</li>
+          <li>Mobile App Development</li>
+          <li>Hybrid App Development</li>
+          <li>E-Commerce Development</li>
+
+        </ul>
+      </div>
+    </div>
+    <div class="footer-two">
+      <div class="quick-data">
+        <h3>Technologies</h3>
+        <ul>
+          <li>android</li>
+          <li>ios</li>
+          <li>core php</li>
+          <li>core php</li>
+          <li>laravel</li>
+          <li>yll</li>
+        </ul>
+      </div>
+      <div class="quick-data">
+        <h3>SOLUTIONS</h3>
+        <ul>
+          <li>Real Estate</li>
+          <li>Travel & Hospitality</li>
+          <li>Healthcare</li>
+          <li>Banking & Finance</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-three">
+      <div class="quick-data-1">
+        <ul>
+          <li>Codeigniter</li>
+          <li>Magento</li>
+          <li>shopify</li>
+          <li>Opencart</li>
+          <li>Woocommerce</li>
+          <li>Prestashop</li>
+        </ul>
+      </div>
+      <div class="quick-data-1" style="position: relative; top: 65px;">
+        <ul>
+          <li>Education & e-Learning</li>
+          <li>Startup Solutions</li>
+          <li>Media & Entertainment</li>
+          <li>Food Ordering Solutions</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-three">
+      <div class="quick-data-1">
+        <ul>
+          <li>Wordpress</li>
+          <li>Angular JS</li>
+          <li>seo</li>
+          <li>Drupal</li>
+          <li>CS-Cart</li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <div class="last-footer">
+    <p style="text-align: center; font-size: larger; line-height: 4;">© 2023 3 Edge Technologies. All rights
+      reserved.</p>
+  </div>
+
+</body>
+
+</html>

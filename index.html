@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3edge</title>
+    <link rel="stylesheet" href="3edge.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        /* ------------------- Responsive Styles ------------------- */
+        @media (max-width: 1200px) {
+
+            .three-box,
+            .four-box,
+            .two-box,
+            .icon-section,
+            .about-section,
+            .side-box,
+            .side-box-second {
+                flex-direction: column;
+                align-items: center;
+                padding: 20px;
+            }
+
+            .box,
+            .box1,
+            .box2,
+            .icon-box {
+                width: 90%;
+                margin-bottom: 20px;
+            }
+
+            .para-section {
+                width: 90%;
+            }
+
+            .footer-one,
+            .footer-two,
+            .footer-three {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            footer {
+                height: auto;
+                padding: 30px 0;
+                flex-wrap: wrap;
+            }
+
+            .logo-wrapper {
+                flex-direction: column;
+                padding: 20px;
+            }
+        }
+
+        @media (max-width: 768px) {
+
+            .navbar,
+            .second-nav {
+                flex-direction: column;
+                height: auto;
+                text-align: center;
+                padding: 10px;
+            }
+
+            .menu a {
+                display: block;
+                margin: 10px 0;
+            }
+
+            .icon span,
+            .num span {
+                padding: 10px;
+                display: block;
+            }
+
+            .num,
+            .icon {
+                justify-content: center;
+            }
+
+            .vision-section {
+                flex-direction: column;
+                height: auto;
+            }
+
+            .vision-box,
+            .touch-box {
+                width: 90%;
+                height: auto;
+                margin-bottom: 20px;
+            }
+
+            .icon-box {
+                width: 90% !important;
+                height: auto !important;
+            }
+        }
+
+        @media (max-width: 480px) {
+
+            .e-commerce-icon,
+            .e-commerce-icon-2 {
+                flex-direction: column;
+                gap: 30px;
+            }
+
+            .e-commerce-icon span,
+            .e-commerce-icon-2 span {
+                margin-bottom: 15px;
+            }
+
+            .footer-icon,
+            .footer-icon-2,
+            .icon-2 span {
+                text-align: center;
+                margin: 10px auto;
+            }
+        }
+    </style>
+</head>
+
+<body style="background-color: #fdfdfd;">
+    <header>
+        <div class="navbar">
+            <div class="num">
+                <div class="phone-icon">
+                    <span style="color: white;"><i class="fa-solid fa-phone"></i></span>
+                    <span style="color: white;">+91-8426897254</span>
+                </div>
+                <div class="phone-icon">
+                    <span style="color: white;"><i class="fa-solid fa-envelope"></i></span>
+                    <span style="color: white;">sales@3edgetechnologies.com</span>
+                </div>
+            </div>
+            <div class="icon">
+                <span><i class="fa-brands fa-linkedin-in"></i></span>
+                <span><i class="fa-brands fa-facebook-f"></i></span>
+                <span><i class="fa-brands fa-instagram"></i></span>
+            </div>
+        </div>
+        <div class="second-nav">
+            <div class="logo"><img src="logo.png" alt="" style="height: 60px; margin-left: 25px;"></div>
+
+            <div class="menu">
+                <a style="color: white;" href="http://127.0.0.1:5500/index.html">home</a>
+                <a href="">service</a>
+                <a href="">industries</a>
+                <a href="">portfolio</a>
+                <a href="http://127.0.0.1:5500/career.html">career</a>
+                <a href="http://127.0.0.1:5500/about.html">about</a>
+                <a href="http://127.0.0.1:5500/blog.html">blog</a>
+                <a href="http://127.0.0.1:5500/contact.html">contact us</a>
+            </div>
+        </div>
+        <div class="video" style="object-fit: cover;"><video
+                src="https://www.3edgetechnologies.com/wp-content/uploads/2023/06/pexels-mikhail-nilov-7989682-1920x1080-25fps.mp4"
+                autoplay loop muted="muted" playsinline controllist="nodownload"></video>
+        </div>
+        <h3 style="color:#fd6600; text-align: center; align-items: center;font-size: xx-large; margin-top: 15px;"
+            id="detail">"Trusted Partner to Startups and Fortune 500 Companies"</h3>
+
+        <div class="logo-wrapper">
+            <img src="a1.png" class="zoom-logo" alt="AppFutura">
+            <img src="a2.png" class="zoom-logo" alt="Apdex">
+            <img style="height: 50px;" src="a3.png" class="zoom-logo" alt="Shopify">
+            <img src="a4.png" class="zoom-logo" alt="Business of Apps">
+        </div>
+    </header>
+    <section>
+        <div class="section-first">
+            <div class="detail-1">
+                <h3 style="color: #3b3465;">Our Process</h3>
+                <h3 style="color: #fd6600; padding: 20px;">"Innovative Solutions for Your Technological Needs".</h3>
+            </div>
+            <div class="three-box">
+                <div class="box">
+                    <img src="search.png" alt="">
+                    <h4>discover</h4>
+                    <p>We first conceptualize the problem and then share time and cost estimates to clients. Project is
+                        initiated once we have agreed on scope and deliverables.</p>
+                </div>
+                <div class="box">
+                    <img src="design.png" alt="">
+                    <h4>Design</h4>
+                    <p>With our web design wisdom and excellence we help you evolve and stand out from the competition.
+                        Our designs are based on exceptional user experience.</p>
+                </div>
+                <div class="box">
+                    <img src="develop.png" alt="">
+                    <h4>develop</h4>
+                    <p>We take pride in supporting you in your quest for carving out your niche in a super-competitive
+                        marketplace with our excellent development support.</p>
+                </div>
+            </div>
+            <div class="two-box">
+                <div class="box1">
+                    <img src="deploy.png" alt="">
+                    <h4>deploy</h4>
+                    <p>Before we announce the website to the world we perform all the operations in our checklist so we
+                        dont forget anything in the eagerness.</p>
+                </div>
+                <div class="box1">
+                    <img src="delight.png" alt="">
+                    <h4>delight</h4>
+                    <p>We believe in exceeding customers expectations and thus creating a positive emotional reaction
+                        from our customers over the globe that help us to grow.</p>
+                </div>
+            </div>
+        </div>
+        <div class="section-second">
+            <div class="detail-2">
+                <h3 style="color:#fd6600;">service</h3>
+                <h3 style="color:#3b3465; padding: 20px;">" Innovative Tech Solutions: Bridging Excellence and
+                    Innovation ".</h3>
+            </div>
+            <div class="four-box">
+                <div class="box2">
+                    <span><i style="font-size: xx-large;  color: #fd6600; margin-top:43px; margin-left:-30px;"
+                            class="fa fa-mobile-screen-button"></i></span>
+                    <h4>Mobile Development</h4>
+                    <h5 style="font-size: large;">Starts From $25/Hour</h5>
+                    <span><button>Read More</button></span>
+                    <p>Mobile app development creates software apps for mobile devices. Our team provides custom design
+                        and development services for iOS and Android platforms. We deliver high-performing,
+                        user-friendly apps to meet unique business requirements and improve mobile engagement.</p>
+                </div>
+                <div class="box2">
+                    <span><i style="font-size: xx-large; color: #fd6600; margin-top:43px; margin-left: -30px;"
+                            class="fa fa-laptop-code"></i></span>
+                    <h4>Web Development</h4>
+                    <h5 style="font-size: large;">Starts From $25/Hour</h5>
+                    <span><button>Read More</button></span>
+                    <p>Website development creates and designs effective websites for businesses. Our team offers
+                        full-service website development including custom design, content creation, and technical
+                        implementation. We deliver responsive, user-friendly websites to improve online presence and
+                        drive business growth.</p>
+                </div>
+                <div class="box2">
+                    <span><i style="font-size: xx-large;  color: #fd6600; margin-top: 43px; margin-left: -30px;"
+                            class="fa fa-cart-shopping"></i></span>
+                    <h4>E Commerce Development</h4>
+                    <h5 style="font-size: large;">Starts From $25/Hour</h5>
+                    <span><button>Read More</button></span>
+                    <p>E-commerce development creates online stores for businesses to sell products/services directly to
+                        customers. Our team provides customized solutions, including website design, payment
+                        integration, and inventory management. We aim to deliver a seamless shopping experience and
+                        boost online sales for businesses.</p>
+                </div>
+                <div class="box2">
+                    <span><i style="font-size: xx-large;  color: #fd6600; margin-top: 43px; margin-left: -30px;"
+                            class="fa fa-network-wired"></i></span>
+                    <h4>CRM/ERP SOLUTION</h4>
+                    <h5 style="font-size: large;">Starts From $25/Hour</h5>
+                    <span><button>Read More</button></span>
+                    <p>CRM solutions help manage customer interactions and data to improve sales, marketing, and
+                        customer service. Our team provides customized, efficient CRM solutions to boost customer
+                        satisfaction and business growth.
+                        ERP (Enterprise Resource Planning) solutions integrate and manage business processes including
+                        finance, HR, procurement, and operations. Our team provides efficient and customizable ERP
+                        solutions to improve business operations and decision-making.</p>
+                </div>
+            </div>
+        </div>
+        <div class="software">
+            <h1 style="color: #fd6600;">Why Choose Us</h1>
+            <h1 style="color: #1357be;">As Your Software Development Company?</h1>
+            <h5 style="color: #515151; font-size: medium;">3 Edge is a custom software development company with an
+                impressive list of <br>releases to satisfied clients
+                from more than 30 countries across the globe.</h5>
+        </div>
+        <h1 style="color: #fd6600; text-align: center; font-size:xx-large; margin-top: 30px;">About Us</h1>
+        <div class="about-section">
+            <div class="para-section">
+                <p>
+                    “3 Edge Technologies is a top custom software development company specializing in web and mobile app
+                    development, custom software solutions, and IT consulting. We take a customer-focused approach to
+                    help businesses achieve their digital transformation goals. Our skilled professionals blend
+                    technical expertise with a deep understanding of business processes to deliver innovative and
+                    tailored solutions.</p>
+                <p>Based in India, we proudly serve clients around the world, including the USA, UK, and Australia. Our
+                    team uses the latest technologies and industry best practices to create solutions that drive
+                    business growth and efficiency. We are dedicated to customer satisfaction, offering personalized
+                    attention, effective communication, and ongoing support to exceed your expectations.</p>
+                <p>We have successfully partnered with startups and Fortune 500 companies, providing the best services
+                    globally. Choose 3 Edge Technologies as your trusted IT partner and unlock the full potential of
+                    your business with our reliable and innovative solutions.</p>
+            </div>
+            <section class="counter-section">
+                <div class="two-counter">
+                    <div class="counter-box orange">
+                        <h2 class="counter" data-target="70">0</h2>
+                        <p style="color: white;">Countries we serve</p>
+                    </div>
+                    <div class="counter-box purple">
+                        <h2 class="counter" data-target="510">0</h2>
+                        <p style="color: white;">Clients around the world</p>
+                    </div>
+                </div>
+                <div class="two-counter">
+                    <div class="counter-box purple">
+                        <h2 class="counter" data-target="10">0</h2>
+                        <p style="color: white;">Years of work experience</p>
+                    </div>
+                    <div class="counter-box orange">
+                        <h2 class="counter" data-target="25">0</h2>
+                        <p style="color: white;">Highly qualified Employees</p>
+                    </div>
+                </div>
+            </section>
+
+
+        </div>
+        <div class="tech">
+            <h1 style="color: #fd6600; text-align: center; font-size:xx-large; margin-top: 30px; padding-bottom: 60px;">
+                technologies</h1>
+        </div>
+        <div class="icon-section">
+
+            <div class="icon-box">
+                <div class="first-icon-box">
+                    <h3 style="margin-bottom: 25px; font-size: xx-large;">e-commerce</h3>
+                    <div class="e-commerce-icon" style="display: flex; gap: 60px;">
+                        <span><i class="fa-brands fa-magento" style="color: #FD6600;"></i>
+                            <p>magento</p>
+                        </span>
+                        <span><i class="fa-brands fa-shopify" style="color: green;"></i>
+                            <p>shopify</p>
+                        </span>
+                        <span><i class="fa-brands fa-opencart" style="color: #0bccff;"></i>
+                            <p>opencart</p>
+                        </span>
+                        <span><i class="fa-solid fa-circle-up" style="color: #0bccff;"></i>
+                            <p>circle up</p>
+                        </span>
+                    </div>
+                    <div class="e-commerce-icon-2" style="display: flex;">
+                        <span><i class="fa-solid fa-cart-plus" style="color: #f29221;"></i>
+                            <p>cart plus</p>
+                        </span>
+                        <span><i class="fa-solid fa-tablets" style="color: #525252;"></i>
+                            <p>tablets</p>
+                        </span>
+                        <span><i class="fa-solid fa-cash-register" style="color:yellowgreen;"></i>
+                            <p>cash-register</p>
+                        </span>
+                        <span><i class="fa-brands fa-wordpress" style="color: #a64a7b;"></i>
+                            <p>wordpress</p>
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="icon-box" style="width: 400px; height: 400px;">
+                <div class="first-icon-box">
+                    <h3 style="font-size: xx-large;">CMS & Frameworks</h3>
+                    <div class="e-commerce-icon" style="display: flex; gap: 60px;">
+                        <span><i class="fa-brands fa-magento" style="color: #FD6600;"></i>
+                            <p>magento</p>
+                        </span>
+                        <span><i class="fa-brands fa-joomla" style="color:black;"></i>
+                            <p>joomla</p>
+                        </span>
+                        <span><i class="fa-solid fa-cake-candles" style="color: #0bccff;"></i>
+                            <p>cakephp</p>
+                        </span>
+
+                    </div>
+                    <div class="e-commerce-icon-2" style="display: flex; gap: 60px;">
+                        <span><i class="fa-brands fa-laravel" style="color: #f29221;"></i>
+                            <p>laravel</p>
+                        </span>
+                        <span><i class="fa-solid fa-code-compare" style="color: #525252;"></i>
+                            <p>code-compare</p>
+                        </span>
+                        <span><i class="fa-brands fa-android" style="color:yellowgreen;"></i>
+                            <p>Android</p>
+                        </span>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="icon-box" style="width: 400px; height: 400px;">
+                <div class="first-icon-box">
+                    <h3 style="margin-bottom: 25px; font-size: xx-large;">Mobile</h3>
+                    <div class="e-commerce-icon" style="display: flex; gap: 60px;">
+                        <span><i class="fa-brands fa-android" style="color:yellowgreen;"></i>
+                            <p>Android</p>
+                        </span>
+                        <span><i class="fa-brands fa-apple" style="color: black;"></i>
+                            <p>ios</p>
+                        </span>
+                        <span><i class="fa-brands fa-node-js" style="color:black;"></i>
+                            <p>opencart</p>
+                        </span>
+
+                    </div>
+                    <div class="e-commerce-icon-2" style="display: flex; gap: 60px;">
+                        <span><i class="fa-brands fa-react" style="color:blueviolet;"></i>
+                            <p>react</p>
+                        </span>
+                        <span><i class="fa-brands fa-swift" style="color:orange;"></i>
+                            <p>swift</p>
+                        </span>
+                        <span><i class="fa-brands fa-flutter" style="color:rgb(37, 88, 206);"></i>
+                            <p>flutter</p>
+                        </span>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="vision-section" style="display: flex;">
+        <div class="vision-box">
+            <h3 style="font-size: xx-large; color: white;margin-top: 30px;">Let's Bring Your Vision To Life</h3>
+            <p style="color: white; margin-top: 90px; font-size: larger;">We are excited to hear about your project
+                ideas and collaborate with you to turn
+                them into reality. Contact us today to discuss your project requirements and explore how we can bring
+                innovation and expertise to your unique business needs.</p>
+        </div>
+        <div class="touch-box">
+            <h3 style="font-size: xx-large; color: white; margin-top: 30px;">Get In Touch</h3>
+            <div class="sales">
+                <p style="color:white; font-size: x-large; margin-top: -9px;">For project enquiry mail to our sales
+                    department</p>
+                <div class="num-2" style="position: static;">
+                    <div class="mail" style="display: flex; gap: 15px;">
+                        <span style="color: white;"><i class="fa-solid fa-envelope"></i></span>
+                        <span style="color: white;">sales@3edgetechnologies.com</span>
+                    </div>
+                    <div class="phone" style="display: flex; gap: 15px; font-size: 19px;">
+                        <span style="color: white;"><i class="fa-solid fa-phone"></i></span>
+                        <span style="color: white;">+91-8426897254</span>
+                    </div>
+                </div>
+
+                <p style="color:white; font-size: x-large; margin-top: 20px;">For Career enquiry mail to our HR
+                    department</p>
+                <div class="num-2" style="position: static;">
+                    <div class="mail" style="display: flex; gap: 15px;">
+                        <span style="color: white;"><i class="fa-solid fa-envelope"></i></span>
+                        <span style="color: white;">sales@3edgetechnologies.com</span>
+                    </div>
+                    <div class="phone" style="display: flex; gap: 15px; font-size: 19px;">
+                        <span style="color: white;"><i class="fa-solid fa-phone"></i></span>
+                        <span style="color: white;">+91-8426897254</span>
+                    </div>
+                </div>
+            </div>
+            <h3 style=" color: white;font-size: x-large; margin-top: 20px;">Connect With Us</h3>
+            <div class="icon-3">
+                <span><i class="fa-brands fa-linkedin-in"></i></span>
+                <span><i class="fa-brands fa-facebook-f"></i></span>
+                <span><i class="fa-brands fa-instagram"></i></span>
+                <span><i class="fa-brands fa-twitter"></i></span>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <footer>
+        <div class="footer-one">
+            <div class="edge-img" style="display: flex; inline-size: fit-content;">
+                <div class="logo"><img src="logo.png" alt="" style="height: 60px; margin-left: 25px; margin-top: 45px;">
+                </div>
+                <img src="edge/mobile_files/edge.png" alt="" style="margin-top: 55px; margin-left: 50px;">
+            </div>
+            <div class="footer-icon" style="display: flex;">
+                <span style="color: white;"><i class="fa-solid fa-envelope"></i></span>
+                <span style="color: white; margin-top: 9px;">sales@3edgetechnologies.com</span>
+            </div>
+            <div class="footer-icon" style="display: flex;">
+                <span style="color: white;"><i class="fa-solid fa-phone"></i></span>
+                <span style="color: white; margin-top: 9px;">+91-8426897254</span>
+            </div>
+
+            <div class="icon-2">
+                <span><i class="fa-brands fa-linkedin-in"></i></span>
+                <span><i class="fa-brands fa-facebook-f"></i></span>
+                <span><i class="fa-brands fa-instagram"></i></span>
+            </div>
+
+            <div class="india-box">
+                <h3 style="margin-left: 12px; font-size: x-large; color:#FD6600 ;">india office</h3>
+                <div class="footer-icon-2" style="display: flex;">
+                    <span style="color:#FD6600;"><i class="fa-solid fa-location-dot"></i></span>
+                    <span style="color: black; margin-top: 9px;">505, JTM Model Town, Jagatpura, Jaipur, India</span>
+                </div>
+                <div class="footer-icon-2" style="display: flex;">
+                    <span style="color:#FD6600;"><i class="fa-solid fa-envelope"></i></span>
+                    <span style="color: black; margin-top: 9px;">sales@3edgetechnologies.com</span>
+                </div>
+            </div>
+            <div class="india-box">
+                <h3 style="margin-left: 12px; font-size: x-large; color:#FD6600 ;">germany office</h3>
+                <div class="footer-icon-2" style="display: flex;">
+                    <span style="color:#FD6600;"><i class="fa-solid fa-location-dot"></i></span>
+                    <span style="color: black; margin-top: 9px;">Siebstr.1 , 30171 Hannover, Germany</span>
+                </div>
+                <div class="footer-icon-2" style="display: flex;">
+                    <span style="color:#FD6600;"><i class="fa-solid fa-envelope"></i></span>
+                    <span style="color: black; margin-top: 9px;">sales@3edgetechnologies.com</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-two">
+            <div class="quick-data">
+                <h3>quick links</h3>
+                <ul>
+                    <li> <a style="color: white;" href="http://127.0.0.1:5500/index.html">home</a></li>
+                    <li> <a href="">portfolio</a></li>
+                    <li> <a href="http://127.0.0.1:5500/career.html">career</a></li>
+                    <li> <a href="http://127.0.0.1:5500/about.html">about</a></li>
+                    <li> <a href="http://127.0.0.1:5500/blog.html">blog</a></li>
+                    <li> <a href="http://127.0.0.1:5500/contact.html">contact us</a></li>
+                </ul>
+            </div>
+            <div class="quick-data">
+                <h3>service</h3>
+                <ul>
+                    <li>web development</li>
+                    <li>Mobile App Development</li>
+                    <li>Hybrid App Development</li>
+                    <li>E-Commerce Development</li>
+
+                </ul>
+            </div>
+        </div>
+        <div class="footer-two">
+            <div class="quick-data">
+                <h3>Technologies</h3>
+                <ul>
+                    <li>android</li>
+                    <li>ios</li>
+                    <li>core php</li>
+                    <li>core php</li>
+                    <li>laravel</li>
+                    <li>yll</li>
+                </ul>
+            </div>
+            <div class="quick-data">
+                <h3>SOLUTIONS</h3>
+                <ul>
+                    <li>Real Estate</li>
+                    <li>Travel & Hospitality</li>
+                    <li>Healthcare</li>
+                    <li>Banking & Finance</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-three">
+            <div class="quick-data-1">
+                <ul>
+                    <li>Codeigniter</li>
+                    <li>Magento</li>
+                    <li>shopify</li>
+                    <li>Opencart</li>
+                    <li>Woocommerce</li>
+                    <li>Prestashop</li>
+                </ul>
+            </div>
+            <div class="quick-data-1" style="position: relative; top: 65px;">
+                <ul>
+                    <li>Education & e-Learning</li>
+                    <li>Startup Solutions</li>
+                    <li>Media & Entertainment</li>
+                    <li>Food Ordering Solutions</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-three">
+            <div class="quick-data-1">
+                <ul>
+                    <li>Wordpress</li>
+                    <li>Angular JS</li>
+                    <li>seo</li>
+                    <li>Drupal</li>
+                    <li>CS-Cart</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <div class="last-footer">
+        <p style="text-align: center; font-size: larger; line-height: 4;">© 2023 3 Edge Technologies. All rights
+            reserved.</p>
+    </div>
+</body>
+
+</html>
+<script>const counters = document.querySelectorAll('.counter');
+
+    const animateCounter = (counter) => {
+        const updateCount = () => {
+            const target = +counter.getAttribute('data-target');
+            const count = +counter.innerText;
+            const speed = 50;
+
+            const increment = Math.ceil(target / speed);
+
+            if (count < target) {
+                counter.innerText = count + increment;
+                setTimeout(updateCount, 40);
+            } else {
+                counter.innerText = target + '+';
+            }
+        };
+        updateCount();
+    };
+
+    const startCounters = () => {
+        counters.forEach(counter => {
+            animateCounter(counter);
+        });
+    };
+
+    let started = false;
+    window.addEventListener('scroll', () => {
+        const section = document.querySelector('.counter-section');
+        const top = section.getBoundingClientRect().top;
+        const windowHeight = window.innerHeight;
+
+        if (!started && top < windowHeight) {
+            startCounters();
+            started = true;
+        }
+    });
+</script>
